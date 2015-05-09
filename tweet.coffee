@@ -3,9 +3,8 @@ command: "php tweet.php"
 refreshFrequency: 50000
 
 style: """
-  /* Modify Colors and Size Here:*/
   
-  size = 265px                //This is just a base for the overall size so everything stays centered
+  size = 265px                
 
   width: size 
  
@@ -16,7 +15,7 @@ style: """
 
   /*POSITION*/
   top: 11%
-  left: 3%
+  left: 2%
 
   /*COLORS*/
   primaryColor = rgba(255,255,255,0.5)
@@ -31,6 +30,8 @@ style: """
   #twitter
     width: 265px
     min-height: 80px
+    margin-top: 10px
+    margin-left -7px
     background-color: secondaryColor
 
   #t_inner
