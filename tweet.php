@@ -19,10 +19,10 @@ $fc = explode(',&quot;', $fc[1]);
 $fc = $fc[0]; 
 
 
-$arr['display_name'] = $dn;
-$arr['followers_count'] = $fc;
-$arr['statuses_count'] = $tc;
-$arr['last_tweet'] = $lt;
+$arr['display_name'] = trim($dn);
+$arr['followers_count'] = trim($fc);
+$arr['statuses_count'] = trim($tc);
+$arr['last_tweet'] = html_entity_decode($lt);
 
 echo json_encode($arr);
 
